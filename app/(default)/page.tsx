@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "XYRA AI",
+  description: "AI-powered tools for automation and design in EPC and engineering industries.",
 };
 
 import PageIllustration from "@/components/page-illustration";

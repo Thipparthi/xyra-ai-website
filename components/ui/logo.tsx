@@ -1,11 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/public/images/logo.svg";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex shrink-0" aria-label="Cruip">
-      <Image src={logo} alt="Cruip Logo" width={32} height={32} />
+    <Link href="/" className="inline-flex shrink-0 items-center" aria-label="XYRA AI">
+      <img
+        src="/images/logo.png"
+        alt="XYRA AI Logo"
+        className="h-11 w-auto md:h-11" // increased height, auto width
+      />
     </Link>
   );
 }
