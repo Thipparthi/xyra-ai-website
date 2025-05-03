@@ -1,22 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import Logo from "./logo";
 
 export default function Header() {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="z-30 mt-4 w-full">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-       <div className="relative flex items-center justify-between rounded-xl bg-white/5 backdrop-blur-md px-6 py-5 shadow-md">
-     
-          {/* Logo (resized) */}
-          <div className="flex items-center">
-            <div className="h-12 w-44">
-              <Logo />
-            </div>
+    <header className="z-30 w-full px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl">
+        <div className="relative flex items-center justify-between rounded-xl bg-white/5 backdrop-blur-md px-6 py-4 shadow-md">
+
+          {/* Logo */}
+          <div className="flex items-center h-10 w-44">
+            <Logo />
           </div>
 
-          {/* Navigation Links */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
             <Link href="/" className="text-gray-300 hover:text-white transition">Home</Link>
             <Link href="/about" className="text-gray-300 hover:text-white transition">About Us</Link>
@@ -24,12 +25,37 @@ export default function Header() {
             <Link href="/contact" className="text-gray-300 hover:text-white transition">Contact</Link>
           </div>
 
-          {/* Auth Buttons */}
+          {/* Auth Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="/login" className="text-gray-300 hover:text-white transition">Sign In</Link>
             <Link href="/register" className="px-4 py-2 rounded-md text-white bg-indigo-500 hover:bg-indigo-600 transition">Register</Link>
           </div>
+
+          {/* Hamburger Button (Mobile) */}
+          <button
+            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-gray-300 hover:text-white focus:outline-none"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"
+              viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-2 rounded-xl bg-white/5 backdrop-blur-md shadow-md px-6 py-4 space-y-3">
+            <Link href="/" className="block text-gray-300 hover:text-white transition">Home</Link>
+            <Link href="/about" className="block text-gray-300 hover:text-white transition">About Us</Link>
+            <Link href="/projects" className="block text-gray-300 hover:text-white transition">Projects</Link>
+            <Link href="/contact" className="block text-gray-300 hover:text-white transition">Contact</Link>
+            <hr className="border-white/10" />
+            <Link href="/login" className="block text-gray-300 hover:text-white transition">Sign In</Link>
+            <Link href="/register" className="block text-white bg-indigo-500 hover:bg-indigo-600 px-4 py-2 rounded-md transition">Register</Link>
+          </div>
+        )}
       </div>
     </header>
   );

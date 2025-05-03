@@ -6,7 +6,7 @@ export default function Logo() {
       <img
         src="/images/logo.png"
         alt="XYRA AI Logo"
-        className="h-11 w-auto md:h-11" // increased height, auto width
+        className="h-10 w-auto md:h-11" // increased height, auto width
       />
     </Link>
   );
