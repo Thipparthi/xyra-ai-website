@@ -39,25 +39,17 @@ export default function HeroHome() {
 
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
-                  <a
+                <Link
+                  href="/contact"
                     className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Get Started
-                      <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                    >
+                      <span className="relative inline-flex items-center">
+                        Schedule Demo
+                        <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
                         -&gt;
+                        </span>
                       </span>
-                    </span>
-                  </a>
-                </div>
-                <div data-aos="fade-up" data-aos-delay={600}>
-                  <a
-                    className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Schedule Demo
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
