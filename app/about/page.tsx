@@ -1,4 +1,8 @@
 import React from "react";
+export const metadata = {
+    title: "About Us - XYRA AI",
+    description: "Learn about XYRA AI, our mission, and how we are transforming engineering with AI-powered tools.",
+  };
 
 export default function Page() {
   return (

@@ -1,4 +1,9 @@
-"use client";
+
+export const metadata = {
+    title: "Contact – XYRA AI",
+    description: "Reach out to XYRA AI for demos, support, and collaborations.",
+  };
+  
 
 export default function ContactPage() {
   return (
