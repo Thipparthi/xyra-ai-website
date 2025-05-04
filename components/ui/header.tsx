@@ -13,7 +13,7 @@ export default function Header() {
         <div className="relative flex items-center justify-between rounded-xl bg-white/5 backdrop-blur-md px-6 py-4 shadow-md">
 
           {/* Logo */}
-          <div className="flex items-center h-10 w-44">
+          <div className="flex items-center h-10 w-40">
             <Logo />
           </div>
 

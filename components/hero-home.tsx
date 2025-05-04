@@ -19,7 +19,7 @@ export default function HeroHome() {
               data-aos="fade-up"
             >
               <ReactTyped
-                strings={["Transforming Industries with AI"]}
+                strings={["Empowering Engineering Teams with AI Powered Automation"]}
                 typeSpeed={40}
                 backSpeed={0}
                 loop={false}
@@ -33,8 +33,8 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                We build smart engineering solutions powered by AI, automation, 
-                and innovation — shaping the future of industries with intelligent technology.
+                From design to documentation — XYRA AI builds AI tools 
+                that automate and accelerate every discipline in plant engineering.
               </p>
 
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
