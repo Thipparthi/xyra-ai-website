@@ -45,9 +45,10 @@ export default function Header() {
             <Link href="/about" className="block text-gray-300 hover:text-white transition">About Us</Link>
             <Link href="/projects" className="block text-gray-300 hover:text-white transition">Projects</Link>
             <Link href="/contact" className="block text-gray-300 hover:text-white transition">Contact</Link>
-            <hr className="border-white/10" />
-          </div>
-        )}
+            </div>
+          )}
+
+
       </div>
     </header>
   );
