@@ -43,10 +43,11 @@ export default function Header() {
           <div className="md:hidden mt-2 rounded-xl bg-white/5 backdrop-blur-md shadow-md px-6 py-4 space-y-3">
             <Link href="/" className="block text-gray-300 hover:text-white transition">Home</Link>
             <Link href="/about" className="block text-gray-300 hover:text-white transition">About Us</Link>
-            <Link href="/projects" className="block text-gray-300 hover:text-white transition">Projects</Link>
+            <Link href="/products" className="block text-gray-300 hover:text-white transition">Products</Link>
             <Link href="/contact" className="block text-gray-300 hover:text-white transition">Contact</Link>
             </div>
           )}
+          
 
 
       </div>
