@@ -27,7 +27,7 @@ const testimonials = [
     img: TestimonialImg01,
     clientImg: ClientImg01,
     name: "MaKayla P.",
-    company: "Disney",
+    company: "Disney1",
     content:
       "As a content creator, I was always on the lookout for a tool that could help me keep up with the demand. The AI-driven content tool has been a game-changer. It generates high-quality content in a fraction of the time it used to take me.",
     categories: [1, 3, 5],
