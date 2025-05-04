@@ -32,6 +32,9 @@ importers:
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
+      react-typed:
+        specifier: ^2.0.12
+        version: 2.0.12(react@19.0.0)
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -565,6 +568,11 @@ packages:
     peerDependencies:
       react: ^19.0.0
 
+  react-typed@2.0.12:
+    resolution: {integrity: sha512-sn59lrb4NKgvQLDGBRWM4wRNEz5Fp37F0BrLA2cKUmDqPSyQJOOiFigz+6wJof0o99QoE16nVCa3B3ID34ejsg==}
+    peerDependencies:
+      react: '>16.8.0'
+
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
@@ -617,6 +625,9 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  typed.js@2.1.0:
+    resolution: {integrity: sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ==}
 
   typescript@5.7.3:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
@@ -1062,6 +1073,11 @@ snapshots:
       react: 19.0.0
       scheduler: 0.25.0
 
+  react-typed@2.0.12(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      typed.js: 2.1.0
+
   react@19.0.0: {}
 
   scheduler@0.25.0: {}
@@ -1117,6 +1133,8 @@ snapshots:
   tapable@2.2.1: {}
 
   tslib@2.8.1: {}
+
+  typed.js@2.1.0: {}
 
   typescript@5.7.3: {}
 
